@@ -1,0 +1,32 @@
+﻿body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Navbar styles */
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+
+.dark-mode .navbar {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Button styles */
+.light-mode .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.dark-mode .btn-primary {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* Add more element-specific styles as needed */

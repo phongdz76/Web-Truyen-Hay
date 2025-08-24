@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Premium Purchase Failed";
+}
+
+<h2>Oops! Something went wrong.</h2>
+
+<div class="alert alert-danger">
+    @TempData["ErrorMessage"]
+</div>
+
+<p>We're sorry, but we couldn't process your premium purchase at this time. Please try again later or contact our support team if the problem persists.</p>
+
+<p>
+    <a href="@Url.Action("BuyPremium", "truyen")" class="btn btn-primary">Try Again</a>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-default">Return to Home</a>
+</p>

@@ -1,0 +1,183 @@
+﻿@model IEnumerable<WebTruyenHay.Models.Truyen>
+
+@{
+    ViewBag.Title = "Index";
+    @Styles.Render("~/Content/nav1.css")
+    @Styles.Render("~/Content/themes.css")
+}
+
+<body class="@(Session["Theme"] as string ?? "light")-mode">
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/Content/images/libary.png" alt="BookShoppe' Logo">
+                </div>
+                <div >
+                    <button onclick="toggleTheme()">light</button>
+                </div>
+                <div class="navsearch">
+                    <form class="search-form" action="/Sach/Search" method="get">
+                        <input type="text" placeholder="Tìm kiếm sách..." name="searchString">
+                        <button type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
+                    </form>
+                    <div class="advanced-search-toggle">
+                        <a href="#" id="toggleAdvancedSearch">Tìm kiếm nâng cao</a>
+                    </div>
+
+                    <div class="advanced-search-form" style="display: none;">
+                        <form action="/Sach/AdvancedSearch" method="get">
+
+                            <label for="category">Thể loại:</label>
+                            <select name="category" id="category">
+                                <option value="">Chọn thể loại</option>
+                                <option value="adventure">adventure</option>
+                                <option value="Quest">Quest</option>
+                                <option value="fantasy">fantasy</option>
+                            </select>
+
+                            <label for="year">Năm xuất bản:</label>
+                            <select name="year" id="year">
+                                <option value="">Chọn năm</option>
+                                <option value="2022">2022</option>
+                                <option value="2015">2015</option>
+                            </select>
+
+                            <label for="author">Tác giả:</label>
+                            <input type="text" name="author" id="author" placeholder="Nhập tên tác giả...">
+                            <button type="submit"><i class="fa fa-search"></i> Tìm kiếm nâng cao</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <nav class="nav">
+       
+        <div class="container">
+            <ul>
+                <li><a href="/">Trang Chủ</a></li>
+                <li>
+                    <a href="#">Thể Loại <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/Sach/Index?category=fantasy">Fantasy</a>
+                        <a href="/Sach/Index?category=Quest">Quest</a>
+                        <a href="/Sach/Index?category=adventure">Adventure</a>
+                        <a href="/Sach/Index?category=Anime">Anime</a>
+                        <a href="/Sach/Index?category=Shoujo">Shoujo</a>
+                        <a href="/Sach/Index?category=NgonTinh">Ngôn Tình</a>
+                        <a href="/Sach/Index?category=ChuyenSinh">Chuyển Sinh</a>
+                        <a href="/Sach/Index?category=Comedy">Comedy</a>
+                        <a href="/Sach/Index?category=Comic">Comic</a>
+                        <a href="/Sach/Index?category=Demons">Demons</a>
+                        <a href="/Sach/Index?category=Detective">Detective</a>
+                    </div>
+                </li>
+                <li><a href="#">Bán Chạy</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+                <li><a href="@Url.Action("BuyPremium", "truyen")">mua Premium</a></li>
+                <div class="right-section">
+                <li><a href="@Url.Action("logout","User")">LogOut</a></li>
+                <li class="format-hello" style="color:white;">
+                    @if (Session["name"] == null)
+                    {
+                        <span>Hello </span> }
+                    else
+                    {
+                        <span><text>Hello: </text>@Session["name"]</span>}
+                    <div class="dropdown-content">
+                        <a href="/truyen/profile">Account</a>
+                    </div>
+                </li>
+        </div>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="welcome-banner">
+        <div class="container">
+            <h1>WELCOME TO BookShoppe'</h1>
+            <p>Offering a wide selection of books on thousands of topics at low prices to satisfy any book-lover!</p>
+        </div>
+    </div>
+
+    <main class="container" style="display:flex;flex-direction:row;">
+        <div class="left" style="width:80%">
+            <div class="book-grid">
+                @foreach (var truyen1 in Model)
+                {
+                    <div class="book-card" style="width:195px">
+                        <img src="@Url.Content(truyen1.imagetruyen)" alt="@truyen1.TieuDe" class="book-image" data-idtruyen="@truyen1.IDtruyen">
+                        <div class="book-info">
+                            <h3 class="book-title">@truyen1.TieuDe</h3>
+                            <div class="book-actions">
+                                <a href="@Url.Action("Delete", "truyen", new { id = truyen1.IDtruyen })" class="btn btn-danger">Xóa</a>
+                                <a href="@Url.Action("Edit", "truyen", new { id = truyen1.IDtruyen })" class="btn btn-warning">Sửa</a>
+                                <a href="@Url.Action("Details", "truyen", new { id = truyen1.IDtruyen})" class="btn btn-info">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="right" style="width:200px;height:65px;margin-top:10px">
+            @Html.Action("top10", "Truyen")
+        </div>
+    </main>
+    <input type="button" value="Create" onclick="redirectToRegister1()" />
+</body>
+
+<script>
+    const advancedSearchLink = document.getElementById('toggleAdvancedSearch');
+    const advancedSearchForm = document.querySelector('.advanced-search-form');
+
+    advancedSearchLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (advancedSearchForm.style.display === 'none' || advancedSearchForm.style.display === '') {
+            advancedSearchForm.style.display = 'block';
+            advancedSearchLink.textContent = 'Ẩn tìm kiếm nâng cao';
+        } else {
+            advancedSearchForm.style.display = 'none';
+            advancedSearchLink.textContent = 'Tìm kiếm nâng cao';
+        }
+    });
+     function redirectToRegister1() {
+        window.location.href = "@Url.Action("Index", "truyen/Create")";
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const bookGrid = document.querySelector('.book-grid');
+
+        bookGrid.addEventListener('click', function (event) {
+            const clickedElement = event.target;
+
+            if (clickedElement.classList.contains('book-image')) {
+                const IDtruyen = clickedElement.getAttribute('data-idtruyen');
+
+                if (IDtruyen) {
+
+                    window.location.href = `/truyen/Details/${IDtruyen}`;
+                }
+            }
+        });
+    });
+    function toggleTheme() {
+        $.ajax({
+            url: '/truyen/ToggleTheme',
+            type: 'GET',
+            success: function (result) {
+                if (result.success) {
+                    $('body').removeClass('light-mode dark-mode').addClass(result.theme + '-mode');
+                    localStorage.setItem('theme', result.theme);
+                }
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        var savedTheme = localStorage.getItem('theme') || 'light';
+        $('body').addClass(savedTheme + '-mode');
+    });
+</script>

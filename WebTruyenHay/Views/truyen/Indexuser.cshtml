@@ -1,0 +1,143 @@
+﻿@model IEnumerable<WebTruyenHay.Models.Truyen>
+
+@{
+    ViewBag.Title = "Indexuser";
+    @Styles.Render("~/Content/nav2.css")
+}
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/Content/images/libary.png" alt="BookShoppe' Logo">
+                </div>
+                <div class="navsearch">
+                    <form class="search-form" action="/Sach/Searchuser" method="get">
+                        <input type="text" placeholder="Tìm kiếm sách..." name="searchString">
+                        <button type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
+                    </form>
+                    <div class="advanced-search-toggle">
+                        <a href="#" id="toggleAdvancedSearch">Tìm kiếm nâng cao</a>
+                    </div>
+
+                    <div class="advanced-search-form" style="display: none;">
+                        <form action="/Sach/AdvancedSearchuser" method="get">
+
+                            <label for="category">Thể loại:</label>
+                            <select name="category" id="category">
+                                <option value="">Chọn thể loại</option>
+                                <option value="adventure">adventure</option>
+                                <option value="Quest">Quest</option>
+                                <option value="fantasy">fantasy</option>
+                            </select>
+
+                            <label for="year">Năm xuất bản:</label>
+                            <select name="year" id="year">
+                                <option value="">Chọn năm</option>
+                                <option value="2022">2022</option>
+                                <option value="2015">2015</option>
+                            </select>
+
+                            <label for="author">Tác giả:</label>
+                            <input type="text" name="author" id="author" placeholder="Nhập tên tác giả...">
+                            <button type="submit"><i class="fa fa-search"></i> Tìm kiếm nâng cao</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul>
+                <li><a href="/">Trang Chủ</a></li>
+                <li>
+                    <a href="#">Thể Loại <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/Sach/Indexuser?category=fantasy">Fantasy</a>
+                        <a href="/Sach/Indexuser?category=Quest">Quest</a>
+                        <a href="/Sach/Indexuser?category=adventure">Adventure</a>
+                        <a href="/Sach/Indexuser?category=Anime">Anime</a>
+                        <a href="/Sach/Indexuser?category=Shoujo">Shoujo</a>
+                        <a href="/Sach/Indexuser?category=NgonTinh">Ngôn Tình</a>
+                        <a href="/Sach/Indexuser?category=ChuyenSinh">Chuyển Sinh</a>
+                        <a href="/Sach/Indexuser?category=Comedy">Comedy</a>
+                        <a href="/Sach/Indexuser?category=Comic">Comic</a>
+                        <a href="/Sach/Indexuser?category=Demons">Demons</a>
+                        <a href="/Sach/Indexuser?category=Detective">Detective</a>
+                    </div>
+                </li>
+                <li><a href="#">Sách Mới</a></li>
+                <li><a href="#">Bán Chạy</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+                <div class="right-section">
+                <li><a href="@Url.Action("logout","User")">LogOut</a></li>
+                <li class="format-hello" style="color:white;">
+                    @if (Session["name"] == null)
+                    {
+                        <span>Hello </span> }
+                    else
+                    {
+                        <span><text>Hello: </text>@Session["name"]</span>}
+                </li>
+        </div>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="welcome-banner">
+        <div class="container">
+            <h1>WELCOME TO BookShoppe'</h1>
+            <p>Offering a wide selection of books on thousands of topics at low prices to satisfy any book-lover!</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="book-grid">
+            @foreach (var truyen1 in Model)
+            {
+            <div class="book-card">
+                <img src="@Url.Content(truyen1.imagetruyen)" alt="@truyen1.TieuDe" style="width:150px" class="book-image" data-idtruyen="@truyen1.IDtruyen">
+                <div class="book-info">
+                    <h3 class="book-title">@truyen1.TieuDe</h3>
+                    <div class="book-actions">
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </main>
+</body>
+<script>
+    const advancedSearchLink = document.getElementById('toggleAdvancedSearch');
+    const advancedSearchForm = document.querySelector('.advanced-search-form');
+
+    advancedSearchLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (advancedSearchForm.style.display === 'none' || advancedSearchForm.style.display === '') {
+            advancedSearchForm.style.display = 'block';
+            advancedSearchLink.textContent = 'Ẩn tìm kiếm nâng cao';
+        } else {
+            advancedSearchForm.style.display = 'none';
+            advancedSearchLink.textContent = 'Tìm kiếm nâng cao';
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const bookGrid = document.querySelector('.book-grid');
+
+        bookGrid.addEventListener('click', function (event) {
+            const clickedElement = event.target;
+
+            if (clickedElement.classList.contains('book-image')) {
+                const IDtruyen = clickedElement.getAttribute('data-idtruyen');
+
+                if (IDtruyen) {
+            
+                    window.location.href = `/truyen/Detailsuser/${IDtruyen}`;
+                }
+            }
+        });
+    });
+</script>

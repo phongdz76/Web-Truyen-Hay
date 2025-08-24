@@ -1,0 +1,21 @@
+﻿@model IEnumerable<WebTruyenHay.Models.TruyenIuModel>
+
+<table class="table">
+
+    @if (Model != null && Model.Any())
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@Url.Content(item.hinh)" class="book-image" data-idtruyen="@item.masach">
+                </td>
+            </tr>
+        }
+    }
+    else
+    {
+        <p>Don't have any flourity</p>
+    }
+
+</table>

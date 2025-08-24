@@ -1,0 +1,55 @@
+﻿@model WebTruyenHay.Models.ChuongAndImage
+
+<div>
+    <h4>Chuong</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dd>
+            @Html.DisplayFor(model => model.chuong.SoThuTu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.chuong.NoiDung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chuong.NoiDung)
+        </dd>
+    </dl>
+    <div>
+        <h4>Chapters</h4>
+        <hr />
+        @if (Model.Chapters != null && Model.Chapters.Any())
+        {
+            <ul class="list-group" style="margin-left:150px">
+                @foreach (var chapter in Model.Chapters)
+                {
+                    <div>
+                        <img src="@Url.Content(chapter.imagechuong1)" />
+                    </div>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No image available for this story.</p>
+        }
+    </div>
+    <div>
+        <a href="@Url.Action("noidungchap","truyen",new { id = Model.chuong.IDchuong})">tao noi dung</a>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+        <a href="@Url.Action("returnchap", "truyen", new { thutu = Model.chuong.SoThuTu })">Return</a>
+        <div>
+            @Html.DisplayFor(model => model.chuong.TieuDe)
+        </div>
+        @if (Model.IsLastChapter)
+        {
+            <a href="#" class="btn btn-secondary disabled" onclick="return false;">Next</a>
+        }
+        else
+        {
+            <a href="@Url.Action("nextchap", "truyen", new { thutu = Model.chuong.SoThuTu })" class="btn btn-danger">Next</a>
+        }
+    </div>
+</div>
+

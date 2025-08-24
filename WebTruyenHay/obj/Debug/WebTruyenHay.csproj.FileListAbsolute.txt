@@ -1,0 +1,267 @@
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\WebTruyenHay.dll.config
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\WebTruyenHay.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\WebTruyenHay.pdb
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\csc.exe
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\csc.exe.config
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\csc.rsp
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\csi.exe
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\csi.exe.config
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\csi.rsp
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.AppContext.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Console.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.IO.Compression.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Net.Http.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.ValueTuple.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\vbc.exe
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\vbc.exe.config
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\vbc.rsp
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\VBCSCompiler.exe
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\Antlr3.Runtime.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\EntityFramework.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\EntityFramework.SqlServer.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\Newtonsoft.Json.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Net.Http.Formatting.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Helpers.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Http.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Http.WebHost.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Mvc.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Optimization.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Razor.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.Razor.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\WebGrease.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\EntityFramework.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\EntityFramework.SqlServer.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\Newtonsoft.Json.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Net.Http.Formatting.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Helpers.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Http.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Http.WebHost.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Mvc.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Optimization.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.Razor.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.Razor.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\Antlr3.Runtime.pdb
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.csproj.AssemblyReference.cache
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.csproj.CoreCompileInputs.cache
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.csproj.CopyComplete
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.dll
+C:\Users\Laptops\OneDrive\Pictures\IT C#\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.pdb
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\WebTruyenHay.dll.config
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\WebTruyenHay.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\WebTruyenHay.pdb
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\csc.exe
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\csc.exe.config
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\csc.rsp
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\csi.exe
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\csi.exe.config
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\csi.rsp
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.AppContext.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Collections.Immutable.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Console.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Globalization.Calendars.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.IO.Compression.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.IO.FileSystem.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Net.Http.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Net.Sockets.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Reflection.Metadata.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.ValueTuple.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Xml.XPath.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\vbc.exe
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\vbc.exe.config
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\vbc.rsp
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\VBCSCompiler.exe
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\roslyn\VBCSCompiler.exe.config
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\Antlr3.Runtime.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\EntityFramework.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\EntityFramework.SqlServer.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\Microsoft.Web.Infrastructure.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\Newtonsoft.Json.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Net.Http.Formatting.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Helpers.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Http.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Http.WebHost.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Mvc.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Optimization.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Razor.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.Deployment.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.Razor.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\WebGrease.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\EntityFramework.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\EntityFramework.SqlServer.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\Newtonsoft.Json.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Net.Http.Formatting.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Helpers.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Http.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Http.WebHost.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Mvc.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Optimization.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.Razor.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.Deployment.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\System.Web.WebPages.Razor.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\Antlr3.Runtime.pdb
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.csproj.AssemblyReference.cache
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.csproj.CoreCompileInputs.cache
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.dll
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.pdb
+D:\WEB_COMIC\WebTruyenHay\WebTruyenHay\obj\Debug\WebTruyenHay.csproj.CopyComplete
+D:\truyen\WebTruyenHay\bin\WebTruyenHay.dll.config
+D:\truyen\WebTruyenHay\bin\WebTruyenHay.dll
+D:\truyen\WebTruyenHay\bin\WebTruyenHay.pdb
+D:\truyen\WebTruyenHay\bin\roslyn\csc.exe
+D:\truyen\WebTruyenHay\bin\roslyn\csc.exe.config
+D:\truyen\WebTruyenHay\bin\roslyn\csc.rsp
+D:\truyen\WebTruyenHay\bin\roslyn\csi.exe
+D:\truyen\WebTruyenHay\bin\roslyn\csi.exe.config
+D:\truyen\WebTruyenHay\bin\roslyn\csi.rsp
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.Managed.Core.targets
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\truyen\WebTruyenHay\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.AppContext.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Collections.Immutable.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Console.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Globalization.Calendars.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.IO.Compression.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.IO.FileSystem.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Net.Http.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Net.Sockets.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Reflection.Metadata.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.ValueTuple.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Xml.XmlDocument.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Xml.XPath.dll
+D:\truyen\WebTruyenHay\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\truyen\WebTruyenHay\bin\roslyn\vbc.exe
+D:\truyen\WebTruyenHay\bin\roslyn\vbc.exe.config
+D:\truyen\WebTruyenHay\bin\roslyn\vbc.rsp
+D:\truyen\WebTruyenHay\bin\roslyn\VBCSCompiler.exe
+D:\truyen\WebTruyenHay\bin\roslyn\VBCSCompiler.exe.config
+D:\truyen\WebTruyenHay\bin\Antlr3.Runtime.dll
+D:\truyen\WebTruyenHay\bin\EntityFramework.dll
+D:\truyen\WebTruyenHay\bin\EntityFramework.SqlServer.dll
+D:\truyen\WebTruyenHay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\truyen\WebTruyenHay\bin\Microsoft.Web.Infrastructure.dll
+D:\truyen\WebTruyenHay\bin\Newtonsoft.Json.dll
+D:\truyen\WebTruyenHay\bin\System.Net.Http.Formatting.dll
+D:\truyen\WebTruyenHay\bin\System.Web.Helpers.dll
+D:\truyen\WebTruyenHay\bin\System.Web.Http.dll
+D:\truyen\WebTruyenHay\bin\System.Web.Http.WebHost.dll
+D:\truyen\WebTruyenHay\bin\System.Web.Mvc.dll
+D:\truyen\WebTruyenHay\bin\System.Web.Optimization.dll
+D:\truyen\WebTruyenHay\bin\System.Web.Razor.dll
+D:\truyen\WebTruyenHay\bin\System.Web.WebPages.Deployment.dll
+D:\truyen\WebTruyenHay\bin\System.Web.WebPages.dll
+D:\truyen\WebTruyenHay\bin\System.Web.WebPages.Razor.dll
+D:\truyen\WebTruyenHay\bin\WebGrease.dll
+D:\truyen\WebTruyenHay\bin\EntityFramework.xml
+D:\truyen\WebTruyenHay\bin\EntityFramework.SqlServer.xml
+D:\truyen\WebTruyenHay\bin\Newtonsoft.Json.xml
+D:\truyen\WebTruyenHay\bin\System.Net.Http.Formatting.xml
+D:\truyen\WebTruyenHay\bin\System.Web.Helpers.xml
+D:\truyen\WebTruyenHay\bin\System.Web.Http.xml
+D:\truyen\WebTruyenHay\bin\System.Web.Http.WebHost.xml
+D:\truyen\WebTruyenHay\bin\System.Web.Mvc.xml
+D:\truyen\WebTruyenHay\bin\System.Web.Optimization.xml
+D:\truyen\WebTruyenHay\bin\System.Web.Razor.xml
+D:\truyen\WebTruyenHay\bin\System.Web.WebPages.xml
+D:\truyen\WebTruyenHay\bin\System.Web.WebPages.Deployment.xml
+D:\truyen\WebTruyenHay\bin\System.Web.WebPages.Razor.xml
+D:\truyen\WebTruyenHay\bin\Antlr3.Runtime.pdb
+D:\truyen\WebTruyenHay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\truyen\WebTruyenHay\obj\Debug\WebTruyenHay.csproj.AssemblyReference.cache
+D:\truyen\WebTruyenHay\obj\Debug\WebTruyenHay.csproj.CoreCompileInputs.cache
+D:\truyen\WebTruyenHay\obj\Debug\WebTruyenHay.csproj.CopyComplete
+D:\truyen\WebTruyenHay\obj\Debug\WebTruyenHay.dll
+D:\truyen\WebTruyenHay\obj\Debug\WebTruyenHay.pdb

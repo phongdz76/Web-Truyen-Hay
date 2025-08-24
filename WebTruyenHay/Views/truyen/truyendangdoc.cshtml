@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WebTruyenHay.Models.truyenđocmodel>
+@{
+    @Styles.Render("~/Content/nav1.css")
+}
+
+<table class="table">
+
+    @if (Model != null && Model.Any())
+    {
+        <div style="display:flex;flex-direction:row;margin-left:10px">
+            @foreach (var item in Model)
+            {
+                <div style="display:flex;justify-content:space-between">
+                    <img src="@Url.Content(item.hinh)" class="book-image" data-idtruyen="@item.masach">
+                </div>
+            }
+        </div>
+
+    }
+    else
+    {
+        <p>Don't have any flourity</p>
+    }
+
+</table>
+

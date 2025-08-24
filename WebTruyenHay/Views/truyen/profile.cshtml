@@ -1,0 +1,127 @@
+﻿@model WebTruyenHay.Models.NguoiDung
+
+<div class="container" style="margin-right: -140px;">
+    <div class="row justify-content-center">
+        <div class="col-md-8 profile-form">
+            <h4 class="text-center mb-4">Thông tin người dùng</h4>
+            @using (Html.BeginForm("profile", "truyen", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.MatKhau, htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+                    @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col">
+                        @Html.LabelFor(model => model.HoTen, htmlAttributes: new { @class = "form-label" })
+                        @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+                    </div>
+                
+                </div>
+                <div class="mb-3">
+                    <label for="UploadImage" class="form-label">Ảnh đại diện</label>
+                    <input type="file" name="UploadImage" id="UploadImage" class="form-control" onchange="previewImage(event)" />
+                    <div class="text-center mt-3">
+                        <img id="imagePreview" src="@Url.Content(Model.imageuser ?? "~/Content/images/user123.png")" alt="User Image" class="rounded-circle" height="200" width="200" />
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-submit">Lưu thông tin</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<div>
+    <h1>truyen đang đọc</h1>
+    @Html.Action("truyendangdoc", "Truyen")
+</div>
+<div>
+    <h1>truyen iu</h1>
+    <hr />
+    @Html.Action("viewTruyeniuthich", "Truyen")
+</div>
+
+<script type="text/javascript">
+    function previewImage(event) {
+        var reader = new FileReader();
+        var imageField = document.getElementById("imagePreview");
+        reader.onload = function () {
+            if (reader.readyState == 2) {
+                imageField.src = reader.result;
+            }
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+<style>
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .profile-form {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        padding: 40px;
+        margin-top: 60px;
+    }
+
+    .form-label {
+        font-weight: 600;
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 15px;
+    }
+
+        .form-row .col {
+            flex: 1;
+        }
+
+    #imagePreview {
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #ddd;
+        margin-bottom: 15px;
+    }
+
+    .btn-submit {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 25px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+
+    button[type="submit"] {
+        margin-top: 20px;
+    }
+</style>
+

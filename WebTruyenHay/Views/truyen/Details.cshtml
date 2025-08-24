@@ -1,0 +1,170 @@
+﻿@model WebTruyenHay.Models.TruyenWithChapters
+@{
+    ViewBag.Title = "Details";
+}
+<div>
+    <h4>Truyen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Truyen.TieuDe)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Truyen.TieuDe)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Truyen.MoTa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Truyen.MoTa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Truyen.TacGia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Truyen.TacGia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Truyen.imagetruyen)
+        </dt>
+        <dd>
+            <img src="@Url.Content(Model.Truyen.imagetruyen)" alt="@Model.Truyen.TieuDe" style="max-width: 300px; height: auto;" />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Truyen.theloai)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Truyen.theloai)
+        </dd>
+    </dl>
+    <div><a href="@Url.Action("doctiep", "truyen")" class="btn btn-danger">Đọc tiếp</a></div>
+    <a href="@Url.Action("doccunhat", "truyen")" class="btn btn-danger">Đọc chương cũ</a>
+    <a href="@Url.Action("docchuongmoi", "truyen")" class="btn btn-danger">Đọc chương mới</a>
+    <button id="likeButton" data-truyen-id="@Model.Truyen.IDtruyen" class="btn btn-secondary">
+        <i class="fa fa-heart"></i> Thích
+    </button>
+</div>
+<div>
+    <h4>Chapters</h4>
+    <hr />
+    @if (Model.Chapters != null && Model.Chapters.Any())
+    {
+        <ul class="list-group">
+            @foreach (var chapter in Model.Chapters)
+            {
+                <li class="list-group-item">
+                    @Html.ActionLink(chapter.TieuDe, "ReadTruyen", new { id = chapter.IDchuong })
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No chapters available for this story.</p>
+    }
+    <a href="@Url.Action("Chuong", "Truyen", new { id = Model.Truyen.IDtruyen })" class="btn btn-info">Tạo chương</a>
+</div>
+<div>
+    <h4>Comments and Ratings</h4>
+    <hr />
+    @using (Html.BeginForm("AddComment", "Truyen", new { id = Model.Truyen.IDtruyen }, FormMethod.Post, new { id = "commentForm" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            @Html.LabelFor(model => model.NewComment)
+            @Html.TextAreaFor(model => model.NewComment, new { @class = "form-control", rows = "3", id = "commentText" })
+            @Html.ValidationMessageFor(model => model.NewComment, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Rating)
+            @for (int i = 1; i <= 5; i++)
+            {
+                <label class="radio-inline">
+                    @Html.RadioButtonFor(model => model.Rating, i, new { @class = "ratingRadio" }) @i
+                </label>
+            }
+            @Html.ValidationMessageFor(model => model.Rating, "", new { @class = "text-danger" })
+        </div>
+        <button type="submit" id="submitButton" class="btn btn-primary" style="display: none;">Submit Comment and Rating</button>
+    }
+</div>
+<div>
+    <h4>Existing Comments</h4>
+    <hr />
+    @if (Model.DanhGia != null && Model.DanhGia.Any())
+    {
+        <ul class="list-group">
+            @foreach (var comment in Model.DanhGia)
+            {
+                <li class="list-group-item">
+                    <strong>@comment.NguoiDung</strong>
+                    <p>@comment.NhanXet</p>
+                    @if (comment.DiemDanhGia.HasValue)
+                    {
+                        <small>Rating: @comment.DiemDanhGia / 5</small>
+                    }
+                    @if (comment.NgayDanhGia.HasValue)
+                    {
+                        <small class="text-muted">@comment.NgayDanhGia.Value.ToString("dd/MM/yyyy HH:mm")</small>
+                    }
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No comments available for this story.</p>
+    }
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Truyen.IDtruyen }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var $commentText = $('#commentText');
+            var $ratingRadios = $('.ratingRadio');
+            var $submitButton = $('#submitButton');
+
+            function checkFormValidity() {
+                var commentValid = $commentText.val().trim().length > 0;
+                var ratingValid = $ratingRadios.is(':checked');
+
+                if (commentValid && ratingValid) {
+                    $submitButton.show();
+                } else {
+                    $submitButton.hide();
+                }
+            }
+
+            $commentText.on('input', checkFormValidity);
+            $ratingRadios.on('change', checkFormValidity);
+
+            checkFormValidity();
+        });
+    </script>
+    <script>
+$(document).ready(function() {
+    $('#likeButton').click(function() {
+        var button = $(this);
+        var truyenId = button.data('truyen-id');
+        $.ajax({
+            url: '@Url.Action("iuthichtruyen", "Truyen")',
+            type: 'POST',
+            data: { id: truyenId },
+            success: function(result) {
+                if (result.isLiked) {
+                    button.removeClass('btn-secondary').addClass('btn-danger');
+                } else {
+                    button.removeClass('btn-danger').addClass('btn-secondary');
+                }
+            },
+            error: function() {
+                alert('Có lỗi xảy ra. Vui lòng thử lại sau.');
+            }
+        });
+    });
+});
+    </script>
+}

@@ -1,0 +1,15 @@
+﻿
+@model IEnumerable<WebTruyenHay.Models.Truyen>
+
+<div class="right" style="width:200px;height:auto;margin-top:10px">
+    <h2 style="text-align:center;">Top 5 Truyện</h2>
+    @foreach (var item in Model)
+    {
+<div class="book-card" style="display:flex;flex-direction:row;margin-top:5px">
+    <img src="@Url.Content(item.imagetruyen)" style="height:100px;width:75px" data-idtruyen="@item.IDtruyen">
+    <div class="book-info">
+        <h9 class="book-title">@item.TieuDe</h9>
+        <h6 style="float:right;margin-right:6px"><img src="~/Content/images/eye.png" style="width:12px;height:12px">@item.viewtruyen</h6>
+    </div>
+</div>}
+</div>

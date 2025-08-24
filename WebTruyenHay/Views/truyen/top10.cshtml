@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebTruyenHay.Models.Truyen>
+
+
+<table class="table">
+ 
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TieuDe)
+        </td>
+        <td>
+            <img src="@Url.Content(item.imagetruyen)"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.theloai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.viewtruyen)
+        </td>
+    </tr>
+}
+
+</table>

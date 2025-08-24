@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="06e08d73eef84e0489a09e0deab01e95" Name="Diagram1">
+        <EntityTypeShape EntityType="truyenhayModel.Chuong" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.DanhGia" Width="1.5" PointX="6" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.DanhMuc" Width="1.5" PointX="5.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.DanhSachDoc" Width="1.5" PointX="3.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.DanhSachDocTruyen" Width="1.5" PointX="6" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.Giaodich" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.imagechuong" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.NguoiDung" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.ThongBao" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.TienDoDoc" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.Truyen" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.TruyenDanhMuc" Width="1.5" PointX="8" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="truyenhayModel.truyeniuthich" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="truyenhayModel.FK__Chuong__TruyenID__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__imagechuo__IDchu__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__DanhGia__NguoiDu__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__DanhGia__TruyenI__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__TruyenDan__DanhM__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__DanhSachD__DanhS__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__DanhSachD__Nguoi__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__DanhSachD__Truye__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__ThongBao__NguoiD__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__TienDoDoc__Nguoi__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__ThongBao__Truyen__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__TienDoDoc__Truye__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="truyenhayModel.FK__TruyenDan__Truye__4316F928" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

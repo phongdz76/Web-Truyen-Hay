@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Buy Premium";
+}
+
+<h2>Buy Premium Subscription</h2>
+
+<div class="row">
+    <div class="col-md-8">
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+        }
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Premium Features</div>
+            <div class="panel-body">
+                <ul>
+                    <li>Ad-free reading experience</li>
+                    <li>Access to exclusive content</li>
+                    <li>Early access to new chapters</li>
+                    <li>Offline reading</li>
+                </ul>
+            </div>
+        </div>
+        <p>Price: 2000 VND</p>
+        @using (Html.BeginForm("ProcessBuyPremium", "truyen", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-primary">Purchase Premium</button>
+        }
+    </div>
+</div>

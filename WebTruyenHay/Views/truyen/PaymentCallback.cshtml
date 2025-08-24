@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Payment Result";
+}
+
+<h2>Payment Result</h2>
+
+<div class="row">
+    <div class="col-md-8">
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+            <p>Your premium features are now active. Enjoy your enhanced experience!</p>
+
+            if (ViewBag.TransactionDetails != null)
+            {
+                <h3>Transaction Details</h3>
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Transaction ID</th>
+                        <td>@ViewBag.TransactionDetails.Id</td>
+                    </tr>
+                    <tr>
+                        <th>Amount</th>
+                        <td>@ViewBag.TransactionDetails.Amount.ToString("C")</td>
+                    </tr>
+                    <tr>
+                        <th>Date</th>
+                        <td>@ViewBag.TransactionDetails.Date.ToString("g")</td>
+                    </tr>
+                </table>
+            }
+
+            <div class="premium-features">
+                <h3>Your New Premium Features</h3>
+                <ul>
+                    <li>Ad-free reading experience</li>
+                    <li>Exclusive content access</li>
+                    <li>Early access to new chapters</li>
+                    <li>Offline reading capability</li>
+                    <li>Priority customer support</li>
+                </ul>
+            </div>
+        }
+        else if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+            <p>We apologize for the inconvenience. If you continue to experience issues, please contact our support team.</p>
+            <a href="@Url.Action("BuyPremium", "YourController")" class="btn btn-warning">Try Again</a>
+        }
+
+        <div class="mt-4">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Return to Home</a>
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <a href="@Url.Action("PremiumDashboard", "YourController")" class="btn btn-success">Go to Premium Dashboard</a>
+            }
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Need Help?
+            </div>
+            <div class="card-body">
+                <p>If you have any questions about your payment or premium features, our support team is here to help.</p>
+                <a href="@Url.Action("Contact", "Home")" class="btn btn-info">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Fade out success message after 5 seconds
+            setTimeout(function () {
+                $(".alert-success").fadeOut("slow");
+            }, 5000);
+        });
+    </script>
+}

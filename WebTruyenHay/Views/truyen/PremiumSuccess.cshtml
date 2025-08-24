@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Premium Purchase Successful";
+}
+
+<h2>Congratulations!</h2>
+
+<div class="alert alert-success">
+    @TempData["SuccessMessage"]
+</div>
+
+<p>You now have access to all our premium features. Enjoy your enhanced reading experience!</p>
+
+<p>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Return to Home</a>
+</p>

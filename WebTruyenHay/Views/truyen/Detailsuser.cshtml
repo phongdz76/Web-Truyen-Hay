@@ -1,0 +1,61 @@
+﻿@model WebTruyenHay.Models.TruyenWithChapters
+@{
+    ViewBag.Title = "Detailsuser";
+}
+<h2>Detailsuser</h2>
+<div>
+    <h4>Truyen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Truyen.TieuDe)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Truyen.TieuDe)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Truyen.MoTa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Truyen.MoTa)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Truyen.TacGia)
+        </dd>
+        <dd>
+            <img src="@Url.Content(Model.Truyen.imagetruyen)" alt="@Model.Truyen.TieuDe" />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Truyen.theloai)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Truyen.theloai)
+        </dd>
+    </dl>
+</div>
+
+<!-- New section for chapters -->
+<div>
+    <h4>Chapters</h4>
+    <hr />
+    @if (Model.Chapters != null && Model.Chapters.Any())
+    {
+        <ul class="list-group">
+            @foreach (var chapter in Model.Chapters)
+            {
+                <li class="list-group-item">
+                    @Html.ActionLink(chapter.TieuDe, "ChapterDetails", new { id = chapter.IDchuong })
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No chapters available for this story.</p>
+    }
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Truyen.IDtruyen }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
