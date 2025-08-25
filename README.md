@@ -43,42 +43,39 @@ Key NuGet packages used:
 - Newtonsoft.Json 12.0.2
 
 ## 🏗 Project Structure
+```
 WebTruyenHay/
-├── 🎮 Controllers/                 # MVC Controllers Layer
-│   ├── HomeController.cs          # Homepage & navigation logic
-│   ├── truyenController.cs        # Story management (CRUD operations)
-│   └── UserController.cs          # User authentication & authorization
+├── 🎮 Controllers/                 # MVC Controllers
+│   ├── HomeController.cs          # Trang chủ & điều hướng
+│   ├── truyenController.cs        # Quản lý truyện (CRUD)
+│   └── UserController.cs          # Xác thực người dùng
 │
-├── 📊 Models/                      # Data Models & Entities
-│   ├── Truyen.cs                  # Story entity (title, description, genre)
-│   ├── Chuong.cs                  # Chapter entity (content, order)
-│   ├── NguoiDung.cs               # User entity (authentication data)
-│   └── [Other models]             # Additional data models
+├── 📊 Models/                      # Entity Framework Models
+│   ├── Truyen.cs                  # Entity truyện
+│   ├── Chuong.cs                  # Entity chương
+│   ├── NguoiDung.cs               # Entity người dùng
+│   └── [Other models]             # Các model khác
 │
-├── 🎨 Views/                       # User Interface Templates
-│   ├── truyen/                    # Story-related view templates
-│   │   ├── Index.cshtml           # Story listing page
-│   │   ├── Details.cshtml         # Story details page
-│   │   └── Read.cshtml            # Chapter reading page
-│   └── [Other views]/             # Additional view directories
+├── 🎨 Views/                       # Razor Views
+│   ├── truyen/                    # Views liên quan đến truyện
+│   │   ├── Index.cshtml           # Danh sách truyện
+│   │   ├── Details.cshtml         # Chi tiết truyện
+│   │   └── Read.cshtml            # Giao diện đọc
+│   └── [Other views]              # Views khác
 │
-├── 📦 Content/                     # Static Assets
-│   ├── images/                    # User uploaded images & covers
-│   │   ├── covers/                # Story cover images
-│   │   └── uploads/               # General uploaded files
-│   └── css/                       # Stylesheets & themes
-│       ├── site.css               # Main site styles
-│       └── reader.css             # Reading interface styles
+├── 📦 Content/                     # Nội dung tĩnh
+│   ├── images/                    # Hình ảnh upload
+│   └── css/                       # Stylesheet
 │
-├── ⚡ Scripts/                     # Client-side Logic
-│   ├── jquery/                    # jQuery library files
-│   ├── reader.js                  # Reading experience enhancements
-│   └── site.js                    # General site functionality
+├── ⚡ Scripts/                     # JavaScript files
+│   ├── reader.js                  # Tính năng đọc truyện
+│   └── site.js                    # Chức năng chung
 │
-└── ⚙️ App_Start/                   # Application Configuration
-    ├── RouteConfig.cs             # URL routing configuration
-    ├── FilterConfig.cs            # Global action filters
-    └── BundleConfig.cs            # CSS/JS bundling setup
+└── ⚙️ App_Start/                   # Cấu hình ứng dụng
+    ├── RouteConfig.cs             # Cấu hình routing
+    ├── FilterConfig.cs            # Global filters
+    └── BundleConfig.cs            # CSS/JS bundling
+```
 
 ## 🎯 Core Entities
 
