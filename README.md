@@ -43,8 +43,42 @@ Key NuGet packages used:
 - Newtonsoft.Json 12.0.2
 
 ## 🏗 Project Structure
-WebTruyenHay/ ├── Controllers/           # MVC Controllers │   ├── HomeController.cs │   ├── truyenController.cs    # Main story controller │   └── UserController.cs      # User authentication ├── Models/               # Entity Framework models │   ├── Truyen.cs         # Story entity │   ├── Chuong.cs         # Chapter entity │   ├── NguoiDung.cs      # User entity │   └── [Other models] ├── Views/                # Razor views │   ├── truyen/           # Story-related views │   └── [Other views] ├── Content/              # Static content │   ├── images/           # Uploaded images │   └── css/              # Stylesheets ├── Scripts/              # JavaScript files └── App_Start/            # Configuration files
-
+WebTruyenHay/
+├── 🎮 Controllers/                 # MVC Controllers Layer
+│   ├── HomeController.cs          # Homepage & navigation logic
+│   ├── truyenController.cs        # Story management (CRUD operations)
+│   └── UserController.cs          # User authentication & authorization
+│
+├── 📊 Models/                      # Data Models & Entities
+│   ├── Truyen.cs                  # Story entity (title, description, genre)
+│   ├── Chuong.cs                  # Chapter entity (content, order)
+│   ├── NguoiDung.cs               # User entity (authentication data)
+│   └── [Other models]             # Additional data models
+│
+├── 🎨 Views/                       # User Interface Templates
+│   ├── truyen/                    # Story-related view templates
+│   │   ├── Index.cshtml           # Story listing page
+│   │   ├── Details.cshtml         # Story details page
+│   │   └── Read.cshtml            # Chapter reading page
+│   └── [Other views]/             # Additional view directories
+│
+├── 📦 Content/                     # Static Assets
+│   ├── images/                    # User uploaded images & covers
+│   │   ├── covers/                # Story cover images
+│   │   └── uploads/               # General uploaded files
+│   └── css/                       # Stylesheets & themes
+│       ├── site.css               # Main site styles
+│       └── reader.css             # Reading interface styles
+│
+├── ⚡ Scripts/                     # Client-side Logic
+│   ├── jquery/                    # jQuery library files
+│   ├── reader.js                  # Reading experience enhancements
+│   └── site.js                    # General site functionality
+│
+└── ⚙️ App_Start/                   # Application Configuration
+    ├── RouteConfig.cs             # URL routing configuration
+    ├── FilterConfig.cs            # Global action filters
+    └── BundleConfig.cs            # CSS/JS bundling setup
 
 ## 🎯 Core Entities
 
